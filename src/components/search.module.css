@@ -1,0 +1,24 @@
+.search {
+  border-bottom: 2px solid var(--colour-primary-blue);
+  display: flex;
+  align-items: center;
+  color: #d0043c;
+}
+
+.search h2 {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.search input {
+  flex-grow: 1;
+  border: 0;
+  height: 30px;
+  padding: 0 10px;
+  margin-left: 30px;
+  background: transparent;
+}
+
+.search input:placeholder-shown {
+  font-style: italic;
+}

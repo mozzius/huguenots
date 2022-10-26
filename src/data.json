@@ -1,0 +1,145 @@
+[
+  {
+    "fund_name": "NASDAQ Cybersecurity UCITS ETF",
+    "primary_ticker": "CBRS",
+    "income_treatment": "Acc",
+    "share_class_currency": "EUR",
+    "isin": "IEOOBF16M727",
+    "strategy": "Thematic",
+    "asset_class": "Equity",
+    "region": "Global",
+    "style": "Active"
+  },
+  {
+    "fund_name": "Cloud Computing UCITS ETF",
+    "primary_ticker": "SKYE",
+    "income_treatment": "Acc",
+    "share_class_currency": "GBP",
+    "isin": "IEOOBFD2H405",
+    "strategy": "Thematic",
+    "asset_class": "Equity",
+    "region": "Global",
+    "style": "Active"
+  },
+  {
+    "fund_name": "Nasdaq® Clean Edge® Green Energy UCITS ETF",
+    "primary_ticker": "QCLN",
+    "income_treatment": "Acc",
+    "share_class_currency": "EUR",
+    "isin": "IEOOBDBRT036",
+    "strategy": "Thematic",
+    "asset_class": "Equity",
+    "region": "Global",
+    "style": "Active"
+  },
+  {
+    "fund_name": "lndxx Innovative Transaction & Process UCITS ETF",
+    "primary_ticker": "BLOK",
+    "income_treatment": "Acc",
+    "share_class_currency": "EUR",
+    "isin": "IEOOBFSDXP42",
+    "strategy": "Thematic",
+    "asset_class": "Equity",
+    "region": "Global",
+    "style": "Active"
+  },
+  {
+    "fund_name": "Dow Jones Internet UCITS ETF",
+    "primary_ticker": "FDNE",
+    "income_treatment": "Acc",
+    "share_class_currency": "EUR",
+    "isin": "IEOOBGOSSC32",
+    "strategy": "Thematic",
+    "asset_class": "Equity",
+    "region": "United States",
+    "style": "Active"
+  },
+  {
+    "fund_name": "Dow Jones International Internet UCITS ETF",
+    "primary_ticker": "FDNI",
+    "income_treatment": "Acc",
+    "share_class_currency": "EUR",
+    "isin": "IEOOBT9PVG14",
+    "strategy": "Thematic",
+    "asset_class": "Equity",
+    "region": "Global",
+    "style": "Active"
+  },
+  {
+    "fund_name": "NYSE Arca Biotechnology UCITS ETF",
+    "primary_ticker": "FBT",
+    "income_treatment": "Acc",
+    "share_class_currency": "USD",
+    "isin": "IEOOBLOLOH60",
+    "strategy": "Thematic",
+    "asset_class": "Equity",
+    "region": "Developed",
+    "style": "Active"
+  },
+  {
+    "fund_name": "IPOX® Europe Equity Opportunities UCITS ETF\t\t\t",
+    "primary_ticker": "tEFPX",
+    "income_treatment": "Acc",
+    "share_class_currency": "EUR",
+    "isin": "IEOOBFD26097",
+    "strategy": "Thematic",
+    "asset_class": "Equity",
+    "region": "Europe",
+    "style": "Active"
+  },
+  {
+    "fund_name": "US Equity Opportunities UCITS ETF",
+    "primary_ticker": "FPXU",
+    "income_treatment": "Acc",
+    "share_class_currency": "USD",
+    "isin": "IEOOBYTH6238",
+    "strategy": "Thematic",
+    "asset_class": "Equity",
+    "region": "United States",
+    "style": "Active"
+  },
+  {
+    "fund_name": "FactorFX UCITS ETF",
+    "primary_ticker": "FXEU",
+    "income_treatment": "Acc",
+    "share_class_currency": "EUR (H)",
+    "isin": "IEOOBDSHBS12",
+    "strategy": "Fixed Income",
+    "asset_class": "Fixed Income",
+    "region": "Global",
+    "style": "Index"
+  },
+  {
+    "fund_name": "FactorFX UCITS ETF",
+    "primary_ticker": "FTFX",
+    "income_treatment": "Acc",
+    "share_class_currency": "USD",
+    "isin": "IEOOBDSHBQ97",
+    "strategy": "Fixed Income",
+    "asset_class": "Fixed Income",
+    "region": "Global",
+    "style": "Index"
+  },
+  {
+    "fund_name": "FactorFX UCITS ETF",
+    "primary_ticker": "FXGB",
+    "income_treatment": "Acc",
+    "share_class_currency": "GBP (H)",
+    "isin": "IEOOBDSHBROS",
+    "strategy": "Fixed Income",
+    "asset_class": "Fixed Income",
+    "region": "Global",
+    "style": "Index"
+  },
+  {
+    "fund_name": "Low Duration Global Government Bond UCITS ETF",
+    "primary_ticker": "FSOV",
+    "income_treatment": "Dist",
+    "share_class_currency": "EUR",
+    "isin": "IEOOBKS2X317",
+    "strategy": "Fixed Income",
+    "asset_class": "Fixed Income",
+    "region": "Global",
+    "style": "Index"
+  }
+]

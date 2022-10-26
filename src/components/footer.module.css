@@ -1,0 +1,30 @@
+.footer {
+  padding: 30px 50px;
+  background-color: var(--colour-primary-blue);
+  color: var(--colour-white);
+  font-size: 14px;
+}
+
+.footer img {
+  margin: 20px 0;
+}
+
+.footer p {
+  max-width: 700px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.links a {
+  margin-right: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}

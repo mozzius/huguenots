@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--colour-primary-blue);
+}
+
+:root {
+  --colour-primary-blue: #063156;
+  --colour-secondary-blue: #335776;
+  --colour-border-grey: #e0e0e0;
+  --colour-background-grey: #f8f9fa;
+  --colour-white: #ffffff;
+  --colour-red: #d0043c;
+}
+
+input {
+  accent-color: var(--colour-red);
+}
