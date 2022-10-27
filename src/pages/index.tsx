@@ -22,6 +22,14 @@ const STRATEGIES = [
   "ESG",
 ];
 
+const ASSET_CLASSES = [
+  "All Cap",
+  "Large Cap",
+  "Small Cap",
+  "Governmental",
+  "Currency",
+];
+
 const NESTED_ASSET_CLASSES: Options = {
   Equity: ["All Cap", "Large Cap", "Small Cap"],
   "Fixed Income": ["Governmental", "Currency"],
@@ -89,27 +97,26 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       );
     }
 
-    // only one strategy is used in the provided, so see if any strategy is selected
-    // if so, filter by Thematic
+    // if strategy is selected, filter by strategy
     const hasStrategy = intersection(filters, STRATEGIES).length > 0;
     if (hasStrategy) {
-      filtered = filters.includes("Thematic")
-        ? filtered.filter((item) => item.strategy === "Thematic")
-        : [];
+      filtered = filtered.filter((item) => filters.includes(item.strategy));
     }
 
-    // I don't know how asset class relates to the data
-    // so I'm just ignoring it
-    // TODO: handle asset class
+    // none of these match the options, but filter anyway
+    const hasAssetClass = intersection(filters, ASSET_CLASSES).length > 0;
+    if (hasAssetClass) {
+      filtered = filtered.filter((item) => filters.includes(item.asset_class));
+    }
 
     // if a region is selected, filter by region
+    // TODO: subcategories logic (should probably select all the children when the parent is selected)
     const hasRegion = intersection(filters, REGIONS).length > 0;
     if (hasRegion) {
       filtered = filtered.filter((item) => filters.includes(item.region));
     }
 
     // if one and only one style is selected then filter by that style
-    // TODO: subcategories logic
     const hasStyle = intersection(filters, STYLES).length === 1;
     if (hasStyle) {
       filtered = filtered.filter(
