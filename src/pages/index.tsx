@@ -9,8 +9,6 @@ import { Footer } from "../components/Footer";
 import type { Options } from "../components/Filter";
 import classes from "./index.module.css";
 
-import data from "../data.json";
-
 // find the intersection of two arrays
 const intersection = (a: string[], b: string[]) =>
   a.filter((value) => b.includes(value));
@@ -81,7 +79,7 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   // In a real app the underlying data is a lot more complex, but since I only
   // have the displayed data from the XD, I'm just filtering what I can see.
   // Therefore some categories are ignored. Sorry!
-  // TODO: use a real API and filter on the server
+  // TODO: use a real API, refetch data, and filter on the server
   const display = useMemo(() => {
     let filtered = data;
     // filter via search
@@ -170,6 +168,9 @@ export default Home;
 
 export const getStaticProps = async () => {
   // get from API in real app
+  // you'd probably also want to use Incremental Static Regeneration
+  // since the data changes every night
+  const { default: data } = await import("../data.json");
   return {
     props: {
       data,
