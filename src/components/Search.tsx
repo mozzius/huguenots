@@ -1,5 +1,6 @@
-import classes from "./search.module.css";
 import { FaSearch as SearchIcon } from "react-icons/fa";
+
+import classes from "./search.module.css";
 
 interface Props {
   search: string;

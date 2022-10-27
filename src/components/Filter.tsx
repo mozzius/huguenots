@@ -1,6 +1,6 @@
 import React, { Fragment, useReducer } from "react";
 import { IoChevronDown as ChevronIcon } from "react-icons/io5";
-import classes from "./Filter.module.css";
+import classes from "./filter.module.css";
 
 const useToggle = () => {
   return useReducer<React.ReducerWithoutAction<boolean>>(

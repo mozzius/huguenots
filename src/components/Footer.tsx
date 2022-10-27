@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import classes from "./Footer.module.css";
+import classes from "./footer.module.css";
 
 export const Footer = () => (
   <footer className={classes.footer}>
