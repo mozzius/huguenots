@@ -11,15 +11,7 @@ import classes from "./index.module.css";
 
 import data from "../data.json";
 
-export const getStaticProps = async () => {
-  // get from API in real app
-  return {
-    props: {
-      data,
-    },
-  };
-};
-
+// find the intersection of two arrays
 const intersection = (a: string[], b: string[]) =>
   a.filter((value) => b.includes(value));
 
@@ -68,6 +60,9 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   data,
 }) => {
   const [search, setSearch] = useState("");
+  // use a reducer rather than useState to so that I can customise the
+  // second argument. I'm not using it like a Redux reducer, it just toggles
+  // whether the array has the value or not.
   const [filters, selectOptions] = useReducer<React.Reducer<string[], string>>(
     (state, option) => {
       if (state.includes(option)) {
@@ -80,7 +75,13 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   );
 
   // use search and filters to filter data
-  // I handle each case individually, since I don't really
+  // This is a bit of a naive implementation, but it works for this example
+  // A lot of the categories overlap (i.e. Developed and Europe)
+  // but this is not taken into account here.
+  // In a real app the underlying data is a lot more complex, but since I only
+  // have the displayed data from the XD, I'm just filtering what I can see.
+  // Therefore some categories are ignored. Sorry!
+  // TODO: use a real API and filter on the server
   const display = useMemo(() => {
     let filtered = data;
     // filter via search
@@ -166,3 +167,12 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 };
 
 export default Home;
+
+export const getStaticProps = async () => {
+  // get from API in real app
+  return {
+    props: {
+      data,
+    },
+  };
+};

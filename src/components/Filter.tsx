@@ -9,6 +9,9 @@ const useToggle = () => {
   );
 };
 
+// probably not the best type? Couldn't figure out a way
+// to handle the nested options and the titles gracefully
+// at the same time
 export type Options =
   | string[]
   | { [key: string]: (string | { [key: string]: string[] })[] };
@@ -19,6 +22,9 @@ interface Props {
   values: string[];
   selectOptions: (select: string) => void;
 }
+
+// Not happy with this, would need much more thought in a real app
+// but it gets the job done
 
 export const Filter = ({ label, options, values, selectOptions }: Props) => {
   const [isOpen, toggle] = useToggle();
