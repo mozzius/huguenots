@@ -42,7 +42,6 @@
 
 .table td {
   vertical-align: bottom;
-  text-align: center;
 }
 
 .table td:first-child {
@@ -52,10 +51,4 @@
 
 .table td:nth-child(4) {
   border-right: 1px solid var(--colour-border-grey);
-}
-
-.table td:nth-child(1),
-.table td:nth-child(2),
-.table td:nth-child(8) {
-  text-align: left;
 }
